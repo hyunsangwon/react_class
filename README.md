@@ -1,6 +1,4 @@
 ## React.js 교육
-
-    기업주도형 드론 임베디드 2회차(22.08.03 ~ 22.02.06) React.js 수업 저장소 😎🐱‍🏍
     React.js을 이용해서 Single Page Application(SPA)를 만들어 보자!
 
 ### 수업 목적👨‍💻
