@@ -42,29 +42,15 @@ function Form() {
         <div className="ui form">
           <div className="field">
             <label>이름 : </label>
-            <input
-              type="text"
-              placeholder="이름을 입력해주세요..."
-              {...register('username', { required: true })}
-            />
+            <input type="text" placeholder="이름을 입력해주세요..." {...register('username', { required: true })} />
           </div>
-          {errors.username && errors.username.types && (
-            <p>{errors.fromErrors.types.required}</p>
-          )}
+          {errors.username && errors.username.types && <p>{errors.fromErrors.types.required}</p>}
           <div className="field">
             <label>이메일 : </label>
-            <input
-              type="email"
-              placeholder="이메일을 입력해주세요..."
-              {...register('email', { required: true, pattern: /^\S+@\S+$/i })}
-            />
+            <input type="email" placeholder="이메일을 입력해주세요..." {...register('email', { required: true, pattern: /^\S+@\S+$/i })} />
           </div>
-          {errors.email && errors.email.types && (
-            <p>{errors.fromErrors.types.required}</p>
-          )}
-          {errors.email && errors.email.types && (
-            <p>{errors.fromErrors.types.emailPattern}</p>
-          )}
+          {errors.email && errors.email.types && <p>{errors.fromErrors.types.required}</p>}
+          {errors.email && errors.email.types && <p>{errors.fromErrors.types.emailPattern}</p>}
           <div className="field">
             <label>비밀번호 : </label>
             <input
@@ -77,15 +63,9 @@ function Form() {
               })}
             />
           </div>
-          {errors.password && errors.password.types && (
-            <p>{errors.fromErrors.types.required}</p>
-          )}
-          {errors.password && errors.password.types && (
-            <p>{errors.fromErrors.types.minLength}</p>
-          )}
-          {errors.password && errors.password.types && (
-            <p>{errors.fromErrors.types.maxLength}</p>
-          )}
+          {errors.password && errors.password.types && <p>{errors.fromErrors.types.required}</p>}
+          {errors.password && errors.password.types && <p>{errors.fromErrors.types.minLength}</p>}
+          {errors.password && errors.password.types && <p>{errors.fromErrors.types.maxLength}</p>}
           <button className="fluid ui button blue" type="submit">
             Submit
           </button>
